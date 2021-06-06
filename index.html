@@ -4,11 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KatoTask1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <title>KatoTask1</title>
 </head>
 <body>
-    
+    <header>
+        <div class="logo__wrapper"><img src="./images/logo.png" alt="izimoto logo image"></div>
+        <div class="wrapper">
+            <button class="search__btn search__btn--small"><img src="./images/magnifier.png" alt="magnifier icon"></button>
+        <div class="avatar"><div class="avatar__icon__wrapper"><img class="avatar__icon" src="./images/avatar.png" alt="mobile menu avatar icon"></div><img class="avatar__icon-arrow" src="./images/avatararrow.png" alt="mobile menu arrow icon"></div>
+        </div>
+        
+        <div class="menu">
+            <div class="wrapper">
+                <a class="btn sell__btn"><img class="menu__item__icon" src="./images/sell.png" alt="">Sprzedaj</a>
+                <button class="btn close-menu__btn"><span></span><span></span></button>
+            </div>
+            <nav>
+                <ul>
+                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/myaccount.png" alt="">Moje konto</a></li>
+                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/shopping.png" alt="">Historia zakupów</a></li>
+                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/offers.png" alt="">Moje oferty</a></li>
+                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/comments.png" alt="">Komentarze</a></li>
+                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/settings.png" alt="">Zarządzanie kontem</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <script src="main.js"></script>
 </body>
 </html>

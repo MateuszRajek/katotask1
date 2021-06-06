@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --white: #fff;
+    --light-grey: #545454;
+    --grey: #2e2e2e;
+    --red: #ff0022;
+    --black: #000000;
+    --blue: #03adfd;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+a, .btn {
+    cursor: pointer;
+    color: var(--white)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 23px;
+    background-color: black
+}
+
+.logo__wrapper {
+    width: 45%;
+    max-width: 225px;
+}
+
+.logo__wrapper img {
+    width: 100%;
+}
+
+.search__btn {
+    padding: 8px 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: var(--red)
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar__icon__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--light-grey);
+}
+
+.avatar__icon__wrapper img {
+    margin-bottom: -10px;
+}
+
+.avatar__icon-arrow {
+    display: none;
+    margin-left: 12px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 10px 30px;
+    background-color: var(--grey);
+}
+
+.menu__item__icon {
+    width: 21px;
+    margin-right: 15px;
+}
+
+.active {
+    display: block;
+}
+
+.sell__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 40px;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.close-menu__btn {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+    border: none;
+    background-color: transparent;
+    font-size: 28px;
+}
+
+.close-menu__btn span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 26px;
+    background-color: var(--white);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-menu__btn span:nth-of-type(2) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu-navigation__item {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.menu-navigation__item a {
+    display: flex;
+    align-items: center;
+    line-height: 150%;
+}
