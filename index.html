@@ -12,26 +12,81 @@
 </head>
 <body>
     <header>
-        <div class="logo__wrapper"><img src="./images/logo.png" alt="izimoto logo image"></div>
         <div class="wrapper">
-            <button class="search__btn search__btn--small"><img src="./images/magnifier.png" alt="magnifier icon"></button>
-        <div class="avatar"><div class="avatar__icon__wrapper"><img class="avatar__icon" src="./images/avatar.png" alt="mobile menu avatar icon"></div><img class="avatar__icon-arrow" src="./images/avatararrow.png" alt="mobile menu arrow icon"></div>
-        </div>
-        
-        <div class="menu">
             <div class="wrapper">
-                <a class="btn sell__btn"><img class="menu__item__icon" src="./images/sell.png" alt="">Sprzedaj</a>
-                <button class="btn close-menu__btn"><span></span><span></span></button>
+                <div class="logo__wrapper">
+                    <img src="./images/logo.png" alt="company logo image">
+                </div>
+                <div class="wrapper desktop-view-only">
+                    <div class="wrapper">
+                        <input class="search__input" type="text" placeholder="Wpisz nazwę części">
+                        <button class="btn search__btn search__btn--large" >
+                            <img src="./images/magnifier.png" alt="magnifier icon">Szukaj
+                        </button>
+                    </div>
+                    <button class="btn browse-categories__btn">Przeglądaj kategorie
+                        <img src="./images/arrow.png" alt="arrow icon">
+                    </button> 
+                </div>
+            </div>
+            
+            <a class="btn sell__btn desktop-view-only">
+                <img class="menu__item__icon" src="./images/sell.png" alt="sell button icon">Sprzedaj
+            </a>
+            <div class="wrapper mobile-view-only">
+                <button class="btn search__btn search__btn--small">
+                    <img src="./images/magnifier.png" alt="magnifier icon">
+                </button>
+            </div>
+        </div>
+        <div class="avatar ">
+            <div class="avatar__icon__wrapper">
+                <img class="avatar__icon" src="./images/avatar.png" alt="menu opening avatar icon">
+            </div>
+            <img class="avatar__icon-arrow desktop-view-only" src="./images/arrow.png" alt="menu avatar arrow icon" aria-hidden="true">
+        </div>
+        <div class="menu">
+            <div class="wrapper mobile-view-only">
+                <a class="btn sell__btn">
+                    <img class="menu__item__icon" src="./images/sell.png" alt="sell button icon" aria-hidden="true">Sprzedaj
+                </a>
+                <button class="btn close-menu__btn">
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
             <nav>
                 <ul>
-                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/myaccount.png" alt="">Moje konto</a></li>
-                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/shopping.png" alt="">Historia zakupów</a></li>
-                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/offers.png" alt="">Moje oferty</a></li>
-                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/comments.png" alt="">Komentarze</a></li>
-                    <li class="menu-navigation__item"><a href=""><img class="menu__item__icon" src="./images/settings.png" alt="">Zarządzanie kontem</a></li>
+                    <li class="menu-navigation__item">
+                        <a href="#">
+                            <img class="menu__item__icon" src="./images/myaccount.png" alt="menu item icon" aria-hidden="true">Moje konto
+                        </a>
+                    </li>
+                    <li class="menu-navigation__item">
+                        <a href="#">
+                            <img class="menu__item__icon" src="./images/shopping.png" alt="menu item icon" aria-hidden="true">Historia zakupów
+                        </a>
+                    </li>
+                    <li class="menu-navigation__item">
+                        <a href="#">
+                            <img class="menu__item__icon" src="./images/offers.png" alt="menu item icon" aria-hidden="true">Moje oferty
+                        </a>
+                    </li>
+                    <li class="menu-navigation__item">
+                        <a href="#">
+                            <img class="menu__item__icon" src="./images/comments.png" alt="menu item icon" aria-hidden="true">Komentarze
+                            <span>16</span>
+                        </a>
+                    </li>
+                    <li class="menu-navigation__item">
+                        <a href="#">
+                            <img class="menu__item__icon" src="./images/settings.png" alt="menu item icon" aria-hidden="true">Zarządzanie kontem
+                        </a>
+                    </li>
                 </ul>
             </nav>
+            <span class="divider"></span>
+            <button class="sign-out__btn"><img src="./images/signout.png" alt="sign out icon" aria-hidden="true">Wyloguj</button>
         </div>
     </header>
     <script src="main.js"></script>
